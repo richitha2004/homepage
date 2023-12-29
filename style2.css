@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.cards{
+    width: 13%;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+    display: inline-block;
+}
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.details{
+    text-align: center;
+}
+button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: blue;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}

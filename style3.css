@@ -1,0 +1,153 @@
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+      margin: 0px 0px;
+      padding-top:20px;
+      padding-left:10px;
+      width:100%;
+      background-color:white;   
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @keyframes slidein1 {
+      from {
+          margin-left: -100%;
+          width:100%;
+        }
+      to{margin-left:0%;
+          width:100%;
+      }
+      
+  }
+  
+  @keyframes fade {
+      from { opacity   : 0.25; }
+      to   { opacity   : 1; }
+  }
+  @keyframes shrink {
+      from { transform : scale(0.25); }
+      to   { transform : scale(1); }
+  }
+  
+  @keyframes slidein {
+      from {
+          margin-left: 100%;
+          width:100%;
+        }
+      to{margin-left:0%;
+          width:100%;
+      }
+      
+  }
+  @keyframes slidein {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+  .title {
+    color: grey;
+    font-size: 100%;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+  .tabcontent {
+    height: 100%;
+  }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .ccolumn3 {
+    float: left;
+    width: 20%;
+    padding: 0 0px;
+    box-shadow: 0 0 5px #BBB;
+    border:1px solid #CCC;
+  }
+  .ccolumn4 {
+    float: left;
+    width: 80%;
+    padding: 0 0px;
+    box-shadow: 0 0 5px #BBB;
+      border:1px solid #CCC; 
+  }
+  
+  
+  @keyframes slidein {
+      from {
+          margin-left: 100%;
+          width:100%;
+        }
+      to{margin-left:0%;
+          width:100%;
+      }  
+  }
+  @keyframes slidein1 {
+      from {
+          margin-left: -100%;
+          width:100%;
+        }
+      to{margin-left:0%;
+          width:100%;
+      }
+      
+  }
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 800px) {
+    .ccolumn1, .ccolumn2, .ccolumn3, .ccolumn4, .ccolumn40, .cccolumn60,.ccolumn60, .bcardleft, .bcardright, .ccolumn25, .ccolumn50,.bcardrightmenu, .bcardleft1, .bcardright1 {
+      width: 100%;
+      display: block;
+      margin-bottom: 0px;
+    }
+  }
+  .scroll-left {
+    height: 100px;	
+    overflow: hidden;
+    position: relative;
+   }
+   .scroll-left .inner {
+    position: absolute;
+    height: 100px;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 45s linear infinite;
+    -webkit-animation: scroll-left 45s linear infinite;
+    animation: scroll-left 45s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(75%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(75%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scroll-left {
+    0%   { 
+    -moz-transform: translateX(75%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+   }  
